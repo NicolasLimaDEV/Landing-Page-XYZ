@@ -1,0 +1,155 @@
+/* Celular */
+@media screen and (max-width: 760px){
+    /*Menu - Header*/
+    .btn-mobile{
+        display: block;
+        margin-right: 1.875rem;
+    }
+
+    .logo{
+        margin-left: 1.875rem;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+
+    .menu{
+        display: none;
+        animation: menuLateralOFF 1s ease;
+    }
+    
+    .menu.active{
+        display: block;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 70px;
+        left: 40%;
+        width: 100vw;
+        height: 100vh;
+        background-color: #141414;
+        border-left: 10px solid #4242D4;
+        animation: menuLateral 1s ease;
+    }
+
+    .menu.disable{
+        display: none;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        animation: menuLateralOf 1s ease;
+    }
+
+    @keyframes menuLateral {
+        0%{
+            left: 100%;
+        }
+        100%{
+            left: 40%;
+        }
+    }
+
+    @keyframes menuLateralOFF {
+        0%{
+            left: 10%;
+        }
+
+        100%{
+            left: 10%;
+        }
+    }
+    
+    .menu a{
+        color: #4242D4;
+        font-weight: bold;
+        margin: 10px;
+    }
+
+    /* Primeira Seção */
+    .conteudo-principal{
+        width: 90vw;
+        text-align: center;
+    }
+
+    .conteudo-principal h1{
+        font-size: 35px;
+    }
+
+    .conteudo-principal input, .btn-search{
+        width: 90vw;
+        margin: 5px auto;
+    }
+
+    /* Segunda Seção */
+    .segunda-secao .conteudo{
+        width: 90vw;
+    }
+
+    .conteudo h1{
+        font-size: 35px;
+    }
+
+    .box{
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .boxes-1, .boxes-2, .boxes-3, .boxes-4{
+        width: 90vw;
+    }
+
+    /*Terceira Seção */
+    .terceira-secao{
+        flex-direction: column;
+    }
+
+    .conteudo-a, .conteudo-b{
+        width: 90vw;
+    }   
+
+    .conteudo-b{
+        margin-top: 10vh;
+        width: 100vw;
+    }
+
+    .card{
+        text-align: center;
+        width: 100vw;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+    }
+
+    .footer-1{
+        width: 90vw;
+    }
+
+    .footer-1 h1{
+        font-size: 35px;
+    }
+
+    .footer-1 input, .footer-1 button{
+        width: 90vw;
+        padding: 10px;
+    }
+
+    .footer-2{
+        flex-direction: column;
+    }
+
+    .footer-card{
+        text-align: center;
+        width: 100vw;
+        margin-bottom: 20px;
+    }
+
+    .footer-card ul{
+        margin-top: 5px;
+    }
+
+    .footer-card li:hover{
+        width: auto;
+        border-bottom: none;
+    }
+
+}
